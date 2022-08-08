@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&family=Shizuru&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #273c75;
+    color: #fff;
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Shizuru';
+    text-align: center;
+    font-size: 4rem;
+    margin-top: -10vh;
+}
+
+h3 {
+    color: #fff;
+    margin: 10px 0 20px;
+    text-align: center;
+}
+
+.container {
+    width: 500px;
+}
+
+textarea {
+    border: none;
+    display: block;
+    width: 100%;
+    height: 100px;
+    font-family: inherit;
+    padding: 10px;
+    margin: 0 0 20px;
+    font-size: 16px;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.tag {
+    background-color: #f59e3b;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 0 5px 10px 0;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.tag.highlight {
+    background-color: #273c75;
+}
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .container {
+        width: 90%;
+    }
+}

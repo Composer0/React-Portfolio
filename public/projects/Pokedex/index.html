@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- META FOR IOS & HANDHELD -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<style type="text/stylesheet">
+</style>
+    <!-- @-webkit-viewport   { width: device-width; }
+    @-moz-viewport      { width: device-width; }
+    @-ms-viewport       { width: device-width; }
+    @-o-viewport        { width: device-width; }
+    @viewport           { width: device-width; } -->
+<script type="text/javascript">
+    //<![CDATA[
+    if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+        var msViewportStyle = document.createElement("style");
+            msViewportStyle.appendChild(
+                document.createTextNode("@-ms-viewport{width:auto!important}")
+            );
+            document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+    }
+//]]>
+</script>
+<meta name="HandheldFriendly" content="true"/>
+<meta name="apple-mobile-web-app-capable" content="YES"/>
+<!-- //META FOR IOS & HANDHELD -->  
+    <link id="favicon" rel="icon" href="img/masterball.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pokedex</title>
+</head>
+
+<body>
+    <div id="hero">
+        <img src="img/pokedex-hero.png" alt="hero">
+    </div>
+    <div id="mascots">
+            <img src="img/sandslash.png" alt="blastoise">
+    </div>
+    <div id="regions-select">
+        <h1>Select Region</h1>
+        <div class="region-boxes">
+
+            <div class="all">
+                <div class="location">
+                    <label for=""check>All</label>
+                    <input type="checkbox" id="all" class="selector" name="All" value="All">
+                </div>
+            </div>
+
+            <div class="specific-locations">
+                <div class="location kanto">
+                    <label for=""check>Kanto</label>
+                    <input type="checkbox" id="Kanto" class="selector" name="Kanto" value="false">
+                </div>
+                <div class="location johto">
+                    <label for=""check>Johto</label>
+                    <input type="checkbox" id="Johto" class="selector" name="Johto" value="false">
+                </div>
+                <div class="location hoenn">
+                    <label for=""check>Hoenn</label>
+                    <input type="checkbox" id="Hoenn" class="selector" name="Hoenn" value="false">
+                </div>
+                <div class="location sinnoh">
+                    <label for=""check>Sinnoh</label>
+                    <input type="checkbox" id="Sinnoh" class="selector" name="Sinnoh" value="false">
+                </div>
+                <div class="location unova">
+                    <label for=""check>Unova</label>
+                    <input type="checkbox" id="Unova" class="selector" name="Unova" value="false">
+                </div>
+                <div class="location kalos">
+                    <label for=""check>Kalos</label>
+                    <input type="checkbox" id="Kalos" class="selector" name="Kalos" value="false">
+                </div>
+                <div class="location alola">
+                    <label for=""check>Alola</label>
+                    <input type="checkbox" id="Alola" class="selector" name="Alola" value="false">
+                </div>
+                <div class="location galar">
+                    <label for=""check>Galar</label>
+                    <input type="checkbox" id="Galar" class="selector" name="Galar" value="false">
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="poke-container" id="poke-container">
+            
+        </div>
+        <script src="script.js"></script>
+    </body>
+
+<footer>
+    <p>Brought to life by Orion Palmer</p>
+</footer>
+
+</html>

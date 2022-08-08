@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&family=Lato:wght@300;400&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: #efefbb;
+    background: linear-gradient(to right,#f53535, #07b3df);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#mascots {
+    position: flex;
+    top: 8rem;
+    justify-content: center;
+    z-index: -1;
+    margin: -4rem;
+}
+
+#mascots img {
+    width: 16rem;
+}
+
+#hero {
+    margin: 3rem auto 0rem;
+}
+
+#regions-select {
+    font-family: 'Secular One', sans-serif;
+    margin-top: 0rem;
+    text-align: center;
+    align-items: center;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #07b3df;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #f53535;
+    border: 1px solid rgb(23, 9, 148);
+    border-radius: 7px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(248, 200, 41);
+    border: 1px solid rgb(30, 9, 148);
+  }
+
+label {
+    color: #12011b;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="checkbox"] {
+    height: 40px;
+    width: 40px;
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #efefbb;
+    border-radius: 50%;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="checkbox"]:hover{
+    background-color: #a5a5a5;
+}
+
+input[type="checkbox"]:checked{
+    background-color: rgb(90, 211, 90);
+
+}
+
+.region-boxes {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    margin: 0rem 1rem 2rem;
+    
+}
+
+.specific-locations {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content:center;
+}
+
+.selector {
+    display: hidden;
+    color: #f53535;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+h1 {
+    letter-spacing: 3px;
+}
+
+#poke-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.pokemon {
+    background-color: #eee;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(100,100,100,0.5);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.pokemon .img-container {
+    background-color: (255, 255, 255, 0.6);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.pokemon .img-container img {
+    max-width: 80%;
+    margin-top: 20px;
+}
+
+.pokemon .info {
+    margin-top: 20px;
+}
+
+.pokemon .info .number {
+    background-color: rgba(0,0,0,0.1);
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 0.8em;
+}
+
+.pokemon .info .name {
+    margin: 15px 0 7px;
+    letter-spacing: 1px;
+}
+
+footer {
+    color: rgb(206, 225, 245);
+    width: 100%;
+    margin-top: 2rem;
+    position: relative;
+    text-align: center;
+    bottom: 30px;
+    z-index: -1;
+}
