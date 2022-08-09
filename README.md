@@ -1,2 +1,3 @@
 # React-Profile
-Working on rebuilding portfolio using react.
+
+Rebuilt in React. Features the use of components, objects, props, mapping.
