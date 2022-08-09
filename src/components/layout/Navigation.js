@@ -1,11 +1,29 @@
 import React from "react";
 
 function Navigation() {
+        
+    // const open_btn = document.getElementsByClassName('.open-btn')
+    // const close_btn = document.getElementsByClassName('.close-btn')
+    // const nav = document.getElementsByClassName('.nav')
+    // const info = document.getElementsByClassName('.info')
+    
+    
+    // open_btn.addEventListener('click', () => {
+    //     nav.forEach(nav_el => nav_el.classList.add('visible'))
+    // });
+    
+    // close_btn.addEventListener('click', () => {
+    //     nav.forEach(nav_el => nav_el.classList.remove('visible'))
+    // });
+    
+    // info.addEventListener = ('click', () => {
+    //     document.getElementById("about").scrollIntoView({behavior: 'smooth'})
+    // });
+
     return (
         <div>
-
-                <button className="nav-btn open-btn">
-                <i className="fas fa-bars"></i>
+            <button className="nav-btn open-btn">
+            <i className="fas fa-bars"></i>
             </button>
 
             <div className="nav nav-black">
@@ -18,7 +36,7 @@ function Navigation() {
                     <li><a id="skills" href="#technolgy">Skills</a></li>
                     <li><a id="the-work" href="#portfolio">Projects</a></li>
                     <li><a id="reach" href="#contact-me">Contact</a></li>
-                    <li><a href="resume/OrionPalmer-CV.pdf" target="_blank">Resume</a></li>
+                    <li><a href="resume/OrionPalmer-CV.pdf" target="_blank" rel="noreferrer">Resume</a></li>
                 </ul>
             </div>
         </div>

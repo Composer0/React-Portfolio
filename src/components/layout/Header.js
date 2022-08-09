@@ -1,12 +1,16 @@
 import React from "react";
 // import Profile from "./objects"
-import profileIMG from "../../assets/img/OrionandNannmodified.png"
+import BackgroundVideo from "./BackgroundVideo";
 import Navigation from "./Navigation"
+import profileIMG from "../../assets/img/OrionandNannmodified.png"
+// import Events from "../script"
 
 function Header() {
     return (
         <div>
+        {/* <Events/> */}
             <div className="top-container">
+                <BackgroundVideo />
                 <Navigation />
                 <div className="profile">
                     <h2>Hello There!</h2>
@@ -18,6 +22,7 @@ function Header() {
                 </div>
                 <br/>
                 <hr/>
+            {/* <MiddleSection/> */}
             </div>
         </div>
     );
