@@ -17,7 +17,7 @@
 /* custom scrollbar */
 ::-webkit-scrollbar {
     width: 10px !important;
-  }
+}
   
   /* Track */
   ::-webkit-scrollbar-track {
@@ -45,6 +45,10 @@ body {
     font-family: 'Merriweather', serif;
     width: 100%;
     overflow-x: hidden;
+}
+
+.backgroundColor {
+    background-image: linear-gradient(#1c689aee ,#061c29ea);
 }
 
 .bg-video {
@@ -97,23 +101,22 @@ p {
 }
 
 .top-container {
-    background-image: linear-gradient(#1c689a ,#1c689ad3);
     position: relative;
     padding-top: 100px;
     margin: 0;
 }
 
 .middle-section {
-    background-image: linear-gradient(#1c689ad3, #14557aad);
+
     margin: 0;
 }
 
 .portfolio-projects {
-    background-image: linear-gradient(#14557aad, #09293bbd);
+
 }
 
 .contact-me-container {
-    background-image: linear-gradient(#09293bbd, #061c29);
+
     margin: 0;
 }
 
@@ -156,7 +159,8 @@ p {
 }
 
 .card-header img:hover {
-    transform: scale(1.04);
+    transform: .3s scale(1.5) ease-in-out;
+    cursor:pointer;
 
 }
 
@@ -219,7 +223,7 @@ p {
 
 .bottom-section {
     margin: 0;
-    background-color: #061c29;
+    /* background-color: #061c29; */
     color: #eaf6f6;
     padding-bottom: 50px;
 }
