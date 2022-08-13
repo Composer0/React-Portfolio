@@ -2,9 +2,12 @@ import React from "react";
 
 function Contact() {
     return (
-
-    <div className="contact-me-container">
-        <div id="contact-me">
+    <div id="contact-me">
+        <br />
+        <br />
+        <br />
+    <div  className="contact-me-container">
+        <div >
             <h2>Getting In Touch</h2>
             <p className="space-the-button bottom-font"><em>The prospect of achieving more with your organization is only one message away. Let's make a plan together on how I can help you achieve your goals!</em></p>
 
@@ -43,6 +46,7 @@ function Contact() {
             </form>
 
         </div>
+    </div>
     </div>
 
     );

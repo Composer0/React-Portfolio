@@ -6,7 +6,7 @@ import profileIMG from "../../assets/img/OrionandNannmodified.png"
 
 function Header() {
     return (
-        <div>
+        <div >
         {/* <Events/> */}
             <div className="top-container">
                 <BackgroundVideo />

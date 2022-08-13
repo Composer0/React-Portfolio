@@ -28,7 +28,7 @@ const ProjectObjects = [
         alt: "Keeper App",
         sLink: "https://www.orionpalmer.com/Keeper-App/index.html",
         gLink: "https://github.com/Composer0/Keeper-App",
-        yLink: "",
+        yLink: "https://youtu.be/Y8lChHINtFw",
         tech: "React | JavaScript | CSS",
         info: "Uses states, props, and components to register input within the input and textarea fields. Upon clicking add, inputs are registered to a notes object and rendered onto a new note which also holds a delete feature."
     },
@@ -105,7 +105,7 @@ const ProjectObjects = [
         alt: "To-Do List",
         sLink: "https://www.orionpalmer.com/ToDoApp/index.html",
         gLink: "https://github.com/Composer0/ToDoApp",
-        yLink: "https://youtu.be/w39ehbLhX4o",
+        yLink: "https://youtu.be/oExJQ8G2ndM",
         tech: "React | JavaScript | CSS",
         info: "Designed with react components, hooks, props, useStates. Allows users to enter and delete list items. Methods of data entry include clicking the 'Add' button and pressing 'Enter'."
     },
