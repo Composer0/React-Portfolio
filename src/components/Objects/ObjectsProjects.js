@@ -23,17 +23,28 @@ const ProjectObjects = [
     },
     {
         key: 3,
+        image: require("../../assets/img/Keeper-App.png"),
+        title: "Keeper App",
+        alt: "Keeper App",
+        sLink: "https://www.orionpalmer.com/Keeper-App/index.html",
+        gLink: "https://github.com/Composer0/Keeper-App",
+        yLink: "",
+        tech: "React | JavaScript | CSS",
+        info: "Uses states, props, and components to register input within the input and textarea fields. Upon clicking add, inputs are registered to a notes object and rendered onto a new note which also holds a delete feature."
+    },
+    {
+        key: 4,
         image: require("../../assets/img/portfolio.png"),
         title: "Portfolio",
         alt: "Portfolio",
         sLink: "https://www.orionpalmer.com/Pokedex/index.html",
         gLink: "https://github.com/Composer0/Updated-CV",
         yLink: "",
-        tech: "React | JavaScript | jQuery | Sass | CSS | HTML",
+        tech: "React | JavaScript | jQuery | Sass | CSS",
         info: "Features smooth scrolling with jQuery, JavaScript className additions. Features projects that primarily use HTML, CSS, and JavaScript."
     },
     {
-        key: 4,
+        key: 5,
         image: require("../../assets/img/simon.png"),
         title: "Simon Says App",
         alt: "Simon Says App",
@@ -44,7 +55,7 @@ const ProjectObjects = [
         info: "Simon Says Game that builds incremental sequenced events while providing user with visual and audio feedback."
     },
     {
-        key: 5,
+        key: 6,
         image: require("../../assets/img/password-generator.png"),
         title: "Password Generator",
         alt: "Password Generator",
@@ -55,7 +66,7 @@ const ProjectObjects = [
         info: "Password Generator that features the toggleable use of lowercase, uppercase, numbers, and symbols to create a scalable password up to 20 characters long."
     },
     {
-        key: 6,
+        key: 7,
         image: require("../../assets/img/movieapp.png"),
         title: "Movie Search",
         alt: "Movie Search",
@@ -66,7 +77,7 @@ const ProjectObjects = [
         info: "Uses external api to generate a list of the current top movies along with their descriptions. Also includes a search feature."
     },
     {
-        key: 7,
+        key: 8,
         image: require("../../assets/img/photography-website.png"),
         title: "Creative Website",
         alt: "Creative Website",
@@ -77,7 +88,7 @@ const ProjectObjects = [
         info: "Multipage Responsive Website that features the uses library frameworks inside of JavaScript to create additional visual effects."
     },
     {
-        key: 8,
+        key: 9,
         image: require("../../assets/img/randomstudentpicker.png"),
         title: "Whose Turn?",
         alt: "Whose Turn?",
@@ -88,7 +99,18 @@ const ProjectObjects = [
         info: "Uses an input form and generates names beneath it. Random student is selected using JavaScript."
     },
     {
-        key: 9,
+        key: 10,
+        image: require("../../assets/img/ToDoApp.png"),
+        title: "To-Do List",
+        alt: "To-Do List",
+        sLink: "https://www.orionpalmer.com/ToDoApp/index.html",
+        gLink: "https://github.com/Composer0/ToDoApp",
+        yLink: "https://youtu.be/w39ehbLhX4o",
+        tech: "React | JavaScript | CSS",
+        info: "Designed with react components, hooks, props, useStates. Allows users to enter and delete list items. Methods of data entry include clicking the 'Add' button and pressing 'Enter'."
+    },
+    {
+        key: 11,
         image: require("../../assets/img/ThemeClock.png"),
         title: "Theme Clock",
         alt: "Theme Clock",
@@ -99,7 +121,7 @@ const ProjectObjects = [
         info: "A clock that uses JavaScript to modify the presentation of the website with a toggleable dark mode. JavaScript uses the Date Constructor to retrieve data to be transformed via CSS to create a functioning ticking clock."
     },
     {
-        key: 10,
+        key: 12,
         image: require("../../assets/img/Notes.png"),
         title: "Notes CRUD App",
         alt: "Notes CRUD App",
