@@ -11,7 +11,9 @@ function Contact() {
             <h2>Getting In Touch</h2>
             <p className="space-the-button bottom-font"><em>The prospect of achieving more with your organization is only one message away. Let's make a plan together on how I can help you achieve your goals!</em></p>
 
-            <form className="contact-form" method="POST" action="https://formsubmit.co/219035e16740563c85c8489a08b21832" onSubmit="">
+            <form className="contact-form" method="POST" action="https://formsubmit.co/219035e16740563c85c8489a08b21832" 
+            // onSubmit=""
+            >
 
                 <input type="hidden" name="_subject" value="New Email!!!"/>
     
@@ -34,7 +36,7 @@ function Contact() {
                     <p id="success"></p>
                 </div>
     
-                {/* <!-- <input type="hidden" name="_captcha" value="false"> --> */}
+                <input type="hidden" name="_captcha" value="false"/> 
     
                 
                 <input type="hidden" name="_autoresponse" value="Thank you for your message. I will reach out to you as soon as humanly possible." />

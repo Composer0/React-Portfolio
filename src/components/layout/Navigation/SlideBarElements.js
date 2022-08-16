@@ -1,21 +1,21 @@
 import styled from 'styled-components';
-import {FaTimes} from 'react-icon/fa';
 import {Link as LinkS} from 'react-scroll'
-import {Link as LinkR} from 'react-router-dom'
+// import {Link as LinkR} from 'react-router-dom'
+import {FaTimes} from 'react-icons/fa';
 
-export const SlideBarContainer = styled.aside `
+export const SideBarContainer = styled.aside`
     position: fixed;
     z-index: 999;
     width: 100%;
     height: 100%;
-    background: #0d0d0dee;
+    background: #061c29;
     display: grid;
     align-items: center;
     top: 0;
     left: 0;
     transition: 0.3s ease-in-out;
-    opacity: ${({isOpen}) => (isOpen ? '100%' : '0')};
-    top: ${({isOpen}) => (isOpen ? '0' : '100%')};
+    opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
+    top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
 `
 
 export const CloseIcon = styled(FaTimes)`
@@ -32,22 +32,22 @@ export const Icon = styled.div`
     outline: none;
 `
 
-export const SlideBarWrapper = styled.div`
+export const SideBarWrapper = styled.div`
     color:#fff;
 `
 
-export const SlideBarMenu = styled.ul`
+export const SideBarMenu = styled.ul`
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 80px);
     text-align: center;
 
-    @media screen and (max-width: 768) {
+    @media screen and (max-width: 480px) {
         grid-template-rows: repeat(6, 80px);
     }
 `
 
-export const SlideBarLink = styled(LinkS)`
+export const SideBarLink = styled(LinkS)`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,33 +60,49 @@ export const SlideBarLink = styled(LinkS)`
     cursor: pointer;
 
     &:hover {
-        color: #01bf71;
+        color: #b5c99a;
         transition: 0.2s ease-in-out;
     }
 `
-
-export const SlideBtnWrap = styled.div `
+export const SideBarLinkResume = styled(LinkS)`
     display: flex;
+    align-items: center;
     justify-content: center;
-`
-
-export const SlideBarRoute = styled(LinkR)`
-    border-radius: 50px;
-    background: #01bf71;
-    white-space: nowrap;
-    padding: 16px 64px;
-    color: #010606;
-    font-size: 16px;
-    outline: none;
-    border: none;
+    font-size: 1.5rem;
+    text-decoration: none;
+    list-style: none;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+    color: #fff;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    text-decoration: none;.
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #7d90ae, #807cb5);
+    background-image: -moz-linear-gradient(top, #7d90ae, #807cb5);
+    background-image: -ms-linear-gradient(top, #7d90ae, #807cb5);
+    background-image: -o-linear-gradient(top, #7d90ae, #807cb5);
+    background-image: linear-gradient(to bottom, #7d90ae, #807cb5);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    border-radius: 1rem;
+    align-items: center;
+    margin: 0 15rem;
 
     &:hover {
-        transition: all 0.2s ease-in-out;
-        background: #fff;
-        color: #010606;
+        transition: all 0.4s ease-in-out;
+        background-image: -webkit-linear-gradient(top, #807cb5, #884676);
+        background-image: -moz-linear-gradient(top, #807cb5, #884676);
+        background-image: -ms-linear-gradient(top, #807cb5, #884676);
+        background-image: -o-linear-gradient(top, #807cb5, #884676);
+        background-image: linear-gradient(to bottom, #807cb5, #884676);
+        color: #fff;
+    }
+    &, a {
+        color: #fff;
     }
 `
 
+export const SideBtnWrap = styled.div `
+    display: flex;
+    justify-content: center;
+`

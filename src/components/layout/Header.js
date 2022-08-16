@@ -8,7 +8,7 @@ function Header() {
     return (
         <div >
         {/* <Events/> */}
-            <div className="top-container">
+            <div id="top-container">
                 <BackgroundVideo />
                 <div className="profile">
                     <h2>Hello There!</h2>
