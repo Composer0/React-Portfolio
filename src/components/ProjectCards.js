@@ -5,7 +5,9 @@ function PROJECTCARD(props) {
     return( 
         <div key={props.key} className="card" >
             <div className="card-header animated-bg" id="header">
-                <img src={props.image} alt={props.alt}></img>    
+                <a href={props.sLink} rel="noopener noreferrer" target="_blank">
+                    <img src={props.image} alt={props.alt} />
+                </a>    
             </div>
             <div className="card-content">
                 <h3 className="card-title animated-bg animated-bg-text" id="title">{props.title}</h3>

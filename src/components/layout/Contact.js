@@ -2,17 +2,13 @@ import React from "react";
 
 function Contact() {
     return (
-    <div id="contact-me">
-        <br />
-        <br />
-        <br />
-    <div  className="contact-me-container">
+    <div id="contact-me" className="contact-me-container">
         <div >
             <h2>Getting In Touch</h2>
-            <p className="space-the-button bottom-font"><em>The prospect of achieving more with your organization is only one message away. Let's make a plan together on how I can help you achieve your goals!</em></p>
+            <p className="space-the-button bottom-font"><em>If you have a project in mind or you just want to chat, feel free to reach out. I can be reached via email or on one of the linked social networks down below.</em></p>
 
             <form className="contact-form" method="POST" action="https://formsubmit.co/219035e16740563c85c8489a08b21832" 
-            // onSubmit=""
+            onSubmit="Thank You"
             >
 
                 <input type="hidden" name="_subject" value="New Email!!!"/>
@@ -36,7 +32,7 @@ function Contact() {
                     <p id="success"></p>
                 </div>
     
-                <input type="hidden" name="_captcha" value="false"/> 
+                {/* <input type="hidden" name="_captcha" value="false"/>  */}
     
                 
                 <input type="hidden" name="_autoresponse" value="Thank you for your message. I will reach out to you as soon as humanly possible." />
@@ -48,7 +44,6 @@ function Contact() {
             </form>
 
         </div>
-    </div>
     </div>
 
     );

@@ -1,10 +1,11 @@
 import React from "react";
 // import Profile from "./objects"
 import BackgroundVideo from "./BackgroundVideo";
-import profileIMG from "../../assets/img/OrionandNannmodified.png"
+import profileIMG from "../../assets/img/orionpalmer.webp"
 // import Events from "../script"
 
 function Header() {
+    
     return (
         <div >
         {/* <Events/> */}

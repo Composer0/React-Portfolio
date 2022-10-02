@@ -10,7 +10,7 @@ import {
     // SlideBtnWrap, 
     } from './SlideBarElements';
 
- import {Pdf} from "../../../assets/resume/OrionPalmer-CV.pdf";
+//  import {Pdf} from "../../../assets/resume/OrionPalmer-CV.docx";
 
 const SideBar = ({isOpen, toggle}) => {
     return (
@@ -22,14 +22,39 @@ const SideBar = ({isOpen, toggle}) => {
             </Icon>
             <SideBarWrapper>
                 <SideBarMenu>
-                    <SideBarLink to="about" onClick={toggle}>About</SideBarLink>
-                    <SideBarLink to="technology" onClick={toggle}>Tech</SideBarLink>
-                    <SideBarLink to="portfolio" onClick={toggle}>Projects</SideBarLink>
-                    <SideBarLink to="contact-me" onClick={toggle}>Contact</SideBarLink>
+                    <SideBarLink to="about" 
+                        onClick={toggle}
+                        smooth={true} 
+                        duration={500} 
+                        spy={true} 
+                        exact="true" 
+                        offset={-90}
+                    >About</SideBarLink>
+                    <SideBarLink to="technology" onClick={toggle}
+                            smooth={true} 
+                            duration={500} 
+                            spy={true} 
+                            exact="true" 
+                            offset={-90}
+                    >Tech</SideBarLink>
+                    <SideBarLink to="portfolio" onClick={toggle}
+                            smooth={true} 
+                            duration={500} 
+                            spy={true} 
+                            exact="true" 
+                            offset={-90}
+                    >Projects</SideBarLink>
+                    <SideBarLink to="contact-me" onClick={toggle}
+                            smooth={true} 
+                            duration={500} 
+                            spy={true} 
+                            exact="true" 
+                            offset={-90}
+                    >Contact</SideBarLink>
                     <br/>
                     <br/>
                     <SideBarLinkResume>
-                    <a href={Pdf} className="resume-setting" rel="noopener noreferrer" target="_blank" download onClick={toggle} >Resume</a>
+                    <a href={"https://drive.google.com/file/d/1yuEWphSQIKv1CRbAmQB4pAwzHaxezUQH/view?usp=sharing"} className="resume-setting" rel="noopener noreferrer" target="_blank" onClick={toggle}>Resume</a>
                     </SideBarLinkResume>
                 </SideBarMenu>
                 <SideBarWrapper>

@@ -90,16 +90,16 @@ export const NavLinks = styled(LinkS)`
         color: #b5c99a;
     }
 `
-export const NavResume = styled(LinkS)`
+export const NavResume = styled.li`
     font-family: "Dancing Script", cursive;
     color: #fff;
-    font-size: 30px;
+    font-size: 27px;
     border-radius: 1rem;
     display: flex;
     align-items: center;
     text-decoration: none;
     padding: 0 1rem;
-    height: 88%;
+    height: 80%;
     cursor: pointer;
     transform: translateY(-10px);
     background: #11cdd4;
@@ -111,6 +111,7 @@ export const NavResume = styled(LinkS)`
     -webkit-border-radius: 8;
     -moz-border-radius: 8;
     box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    margin-right: 24px;
 
 
 
@@ -137,8 +138,8 @@ export const NavResume = styled(LinkS)`
         text-decoration: none;
         }
     }
-`
 
-export const FaBarsCustom = styled.div`
-    color: #b5c99a;
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 `

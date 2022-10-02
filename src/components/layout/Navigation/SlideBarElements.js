@@ -5,17 +5,21 @@ import {FaTimes} from 'react-icons/fa';
 
 export const SideBarContainer = styled.aside`
     position: fixed;
+    margin: 0;
     z-index: 999;
     width: 100%;
     height: 100%;
     background: #061c29;
     display: grid;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     top: 0;
     left: 0;
     transition: 0.3s ease-in-out;
     opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
     top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
+    
 `
 
 export const CloseIcon = styled(FaTimes)`
@@ -41,9 +45,11 @@ export const SideBarMenu = styled.ul`
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 80px);
     text-align: center;
+    transform: translateX(-1.25rem);
 
     @media screen and (max-width: 480px) {
         grid-template-rows: repeat(6, 80px);
+        margin: 0 auto;
     }
 `
 
@@ -58,13 +64,17 @@ export const SideBarLink = styled(LinkS)`
     text-decoration: none;
     color: #fff;
     cursor: pointer;
+    ${'' /* text-align: center; */}
+    margin: 0 auto;
+    ${'' /* padding-inline-start: 0; */}
+    
 
     &:hover {
         color: #b5c99a;
         transition: 0.2s ease-in-out;
     }
 `
-export const SideBarLinkResume = styled(LinkS)`
+export const SideBarLinkResume = styled.li`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,7 +82,6 @@ export const SideBarLinkResume = styled(LinkS)`
     text-decoration: none;
     list-style: none;
     transition: 0.2s ease-in-out;
-    text-decoration: none;
     color: #fff;
     cursor: pointer;
     background: #11cdd4;
@@ -85,8 +94,9 @@ export const SideBarLinkResume = styled(LinkS)`
     -moz-border-radius: 8;
     box-shadow: 2px 2px 5px rgb(0, 0, 0);
     border-radius: 1rem;
-    align-items: center;
     margin: 0 15rem;
+    padding: 0 1rem;
+    text-decoration: none;
 
     &:hover {
         transition: all 0.4s ease-in-out;
@@ -97,8 +107,14 @@ export const SideBarLinkResume = styled(LinkS)`
         background-image: linear-gradient(to bottom, #807cb5, #884676);
         color: #fff;
     }
+
+    &:active {
+        padding: 0;
+        font-size: 1.2rem;
+    }
     &, a {
         color: #fff;
+        text-decoration: none;
     }
 `
 
