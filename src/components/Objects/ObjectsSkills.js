@@ -49,6 +49,12 @@ const Skills = [
     },
     {
         key: 9, 
+        img: require("../../assets/img/mongodb.webp"),
+        dataHover: "MongoDB",
+        alt: "MongoDB"
+    },
+    {
+        key: 9, 
         img: require("../../assets/img/node.webp"),
         dataHover: "Node.js",
         alt: "Node.js"
@@ -58,6 +64,18 @@ const Skills = [
         img: require("../../assets/img/express.webp"),
         dataHover: "Express",
         alt: "Express"
+    },
+    {
+        key: 11, 
+        img: require("../../assets/img/npm.webp"),
+        dataHover: "npm",
+        alt: "npm"
+    },
+    {
+        key: 11, 
+        img: require("../../assets/img/postman.webp"),
+        dataHover: "Postman",
+        alt: "Postman"
     },
     {
         key: 11, 

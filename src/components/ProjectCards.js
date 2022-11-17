@@ -14,6 +14,7 @@ function PROJECTCARD(props) {
                     <div className="project-info ">
                         <a className="footer-link" href={props.gLink} rel="noopener noreferrer" target="_blank"><i className="fab fa-github"></i></a>
                         <a className="footer-link" href={props.yLink} target="_blank" rel="noopener noreferrer"><i className="fab fa-youtube"></i></a>
+                        <a className="footer-link" href={props.sLink} target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                         <hr />
                     <p className="card-excerpt" >

@@ -1,17 +1,6 @@
 const ProjectObjects = [
     {
         key: 1,
-        image: require("../../assets/img/beatmachine.webp"),
-        title: "Beat Maker",
-        alt: "Beat Maker",
-        sLink: "https://www.orionpalmer.com/projects/BeatmakerProject/index.html",
-        gLink: "https://github.com/Composer0/Music-Maker",
-        yLink: "https://www.youtube.com/watch?v=zG6wQomYu9E",
-        tech: "HTML | CSS | JavaScript",
-        info: "Uses selector menus and JavaScript to choose specific sounds to be played on each of the four tracks. Allows switching between two applications to play and customize music."
-    },
-    {
-        key: 2,
         image: require("../../assets/img/Pokedex.webp"),
         title: "Pokedex",
         alt: "Pokedex",
@@ -22,7 +11,7 @@ const ProjectObjects = [
         info: "This application features the RESTful API known as PokeAPI to gather Pokemon data by using async/await className methods upon clicking one of the regional search selectors."
     },
     {
-        key: 3,
+        key: 2,
         image: require("../../assets/img/Keeper-App.webp"),
         title: "Keeper App",
         alt: "Keeper App",
@@ -33,7 +22,7 @@ const ProjectObjects = [
         info: "Uses states, props, and components to register input within the input and textarea fields. Upon clicking add, inputs are registered to a notes object and rendered onto a new note which also holds a delete feature."
     },
     {
-        key: 4,
+        key: 3,
         image: require("../../assets/img/portfolio.webp"),
         title: "Portfolio",
         alt: "Portfolio",
@@ -44,7 +33,7 @@ const ProjectObjects = [
         info: "Build using React components and CSS. Navigation features the use of React Stylized Components. React-Scroll is used to create a smooth scroll effect. Maps and props are used to render project cards."
     },
     {
-        key: 5,
+        key: 4,
         image: require("../../assets/img/simon.webp"),
         title: "Simon Says App",
         alt: "Simon Says App",
@@ -55,7 +44,7 @@ const ProjectObjects = [
         info: "Simon Says Game that builds incremental sequenced events while providing user with visual and audio feedback."
     },
     {
-        key: 6,
+        key: 5,
         image: require("../../assets/img/password-generator.webp"),
         title: "Password Generator",
         alt: "Password Generator",
@@ -66,7 +55,7 @@ const ProjectObjects = [
         info: "Password Generator that features the toggleable use of lowercase, uppercase, numbers, and symbols to create a scalable password up to 20 characters long."
     },
     {
-        key: 7,
+        key: 6,
         image: require("../../assets/img/movieapp.webp"),
         title: "Movie Search",
         alt: "Movie Search",
@@ -77,7 +66,7 @@ const ProjectObjects = [
         info: "Uses external api to generate a list of the current top movies along with their descriptions. Also includes a search feature."
     },
     {
-        key: 8,
+        key: 7,
         image: require("../../assets/img/photography-website.webp"),
         title: "Creative Website",
         alt: "Creative Website",
@@ -88,7 +77,7 @@ const ProjectObjects = [
         info: "Multipage Responsive Website that features the uses library frameworks inside of JavaScript to create additional visual effects."
     },
     {
-        key: 9,
+        key: 8,
         image: require("../../assets/img/randomstudentpicker.webp"),
         title: "Whose Turn?",
         alt: "Whose Turn?",
@@ -99,7 +88,7 @@ const ProjectObjects = [
         info: "Uses an input form and generates names beneath it. Random student is selected using JavaScript."
     },
     {
-        key: 10,
+        key: 9,
         image: require("../../assets/img/ToDoApp.webp"),
         title: "To-Do List",
         alt: "To-Do List",
@@ -110,7 +99,7 @@ const ProjectObjects = [
         info: "Designed with react components, hooks, props, useStates. Allows users to enter and delete list items. Methods of data entry include clicking the 'Add' button and pressing 'Enter'."
     },
     {
-        key: 11,
+        key: 10,
         image: require("../../assets/img/ThemeClock.webp"),
         title: "Theme Clock",
         alt: "Theme Clock",
@@ -120,17 +109,17 @@ const ProjectObjects = [
         tech: "JavaScript | CSS | HTML",
         info: "A clock that uses JavaScript to modify the presentation of the website with a toggleable dark mode. JavaScript uses the Date Constructor to retrieve data to be transformed via CSS to create a functioning ticking clock."
     },
-    {
-        key: 12,
-        image: require("../../assets/img/Notes.webp"),
-        title: "Notes CRUD App",
-        alt: "Notes CRUD App",
-        sLink: "https://www.orionpalmer.com/projects/NotesApp/index.html",
-        gLink: "hhttps://github.com/Composer0/Notes-App",
-        yLink: "https://youtu.be/QLWJuKpYbNU",
-        tech: "JavaScript | CRUD | CSS | HTML",
-        info: "CRUD application. Uses a markdown library. Works with local storage to ensure that only the user's browser will be able to see the contents of what is written unless the content is deleted via the app or browser."
-    },
+    // {
+    //     key: 11,
+    //     image: require("../../assets/img/Notes.webp"),
+    //     title: "Notes CRUD App",
+    //     alt: "Notes CRUD App",
+    //     sLink: "https://www.orionpalmer.com/projects/NotesApp/index.html",
+    //     gLink: "hhttps://github.com/Composer0/Notes-App",
+    //     yLink: "https://youtu.be/QLWJuKpYbNU",
+    //     tech: "JavaScript | CRUD | CSS | HTML",
+    //     info: "CRUD application. Uses a markdown library. Works with local storage to ensure that only the user's browser will be able to see the contents of what is written unless the content is deleted via the app or browser."
+    // },
 ]
 
 export default ProjectObjects;

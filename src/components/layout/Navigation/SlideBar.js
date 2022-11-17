@@ -22,6 +22,14 @@ const SideBar = ({isOpen, toggle}) => {
             </Icon>
             <SideBarWrapper>
                 <SideBarMenu>
+                    <SideBarLink to="/" 
+                        onClick={toggle}
+                        smooth={true} 
+                        duration={500} 
+                        spy={true} 
+                        exact="true" 
+                        offset={-90}
+                    >Home</SideBarLink>
                     <SideBarLink to="about" 
                         onClick={toggle}
                         smooth={true} 
@@ -30,21 +38,21 @@ const SideBar = ({isOpen, toggle}) => {
                         exact="true" 
                         offset={-90}
                     >About</SideBarLink>
-                    <SideBarLink to="technology" onClick={toggle}
+                    {/* <SideBarLink to="technology" onClick={toggle}
                             smooth={true} 
                             duration={500} 
                             spy={true} 
                             exact="true" 
                             offset={-90}
-                    >Tech</SideBarLink>
-                    <SideBarLink to="portfolio" onClick={toggle}
+                    >Tech</SideBarLink> */}
+                    <SideBarLink to="projects" onClick={toggle}
                             smooth={true} 
                             duration={500} 
                             spy={true} 
                             exact="true" 
                             offset={-90}
                     >Projects</SideBarLink>
-                    <SideBarLink to="contact-me" onClick={toggle}
+                    <SideBarLink to="/contact" onClick={toggle}
                             smooth={true} 
                             duration={500} 
                             spy={true} 

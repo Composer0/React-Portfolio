@@ -4,7 +4,7 @@ import BackgroundVideo from "./BackgroundVideo";
 import profileIMG from "../../assets/img/orionpalmer.webp"
 // import Events from "../script"
 
-function Header() {
+export default function Header() {
     
     return (
         <div >
@@ -17,7 +17,7 @@ function Header() {
                     <div>
                         <img className="profile-img" width="200px" src={profileIMG} alt="Orion"/>
                     </div>
-                    <h2><span className="software">Software </span> <span className="pro">Engineer</span></h2>
+                    <h2><span className="pro">Fullstack Developer</span></h2>
                 </div>
                 <br/>
                 <hr/>
@@ -26,5 +26,3 @@ function Header() {
         </div>
     );
 }
-
-export default Header;
