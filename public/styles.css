@@ -45,10 +45,12 @@ body {
     font-family: 'Merriweather', serif;
     width: 100%;
     overflow-x: hidden;
+    background-color:#061c29;
 }
 
 .backgroundColor {
     background-image: linear-gradient(#1c689aee ,#061c29ea);
+    height: 100%;
 }
 
 .bg-video {
@@ -65,11 +67,21 @@ body {
       width: 100%;
       object-fit: cover; }
 
+      .full-bg-img {
+        display: none;
+        position:fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }      
+
 h1{
     font-family: "Dancing Script", cursive;
     font-size: 5.625rem;
     color: #93b6b6;
-    line-height: 2;
+    line-height: 1.2;
     margin-bottom: 0px;
     margin-top: 0px;
 }
@@ -100,24 +112,32 @@ p {
     margin: 2rem;
 }
 
-.top-container {
+#top-container {
     position: relative;
     padding-top: 100px;
     margin: 0;
 }
+
+
 
 .middle-section {
 
     margin: 0;
 }
 
-.portfolio-projects {
-
+.portfolio-projects-showcase{
+    transform: translateY(-5%);
+    display: flex;
+    flex-direction: column;
+}
+.portfolio-projects-page {
+    margin-top: 8rem;
 }
 
 .contact-me-container {
 
     margin: 0;
+    height: 100vh;
 }
 
 
@@ -128,6 +148,12 @@ p {
     flex-direction: row;
     margin: 0;
     flex-wrap: wrap;
+    padding-bottom: 20rem;
+}
+
+.container-showcase {
+    display: flex;
+    flex-direction: column;
 }
 
 .card {
@@ -225,90 +251,12 @@ p {
     margin: 0;
     /* background-color: #061c29; */
     color: #eaf6f6;
-    padding-bottom: 50px;
+    padding-bottom: 1px;
 }
-
-/* .fa-bars {
-    color: #fff;
-    top: 10px;
-    right: 300px;
-} */
-
-/* .nav-btn {
-    color:rgba(0, 0, 0, 0.986);
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    font-size: 20px;
-    z-index: 1; */
-/* } */
-
-/* .open-btn {
-    opacity: 0.5;
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    z-index: 1;
-}
-
-.open-btn:hover {
-    color: #fff;
-    z-index: 1;
-}
-
-.open-btn .visible{
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    z-index: 1;
-} */
-
-/* .nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease-in-out;
-    z-index: 1;
-}
-
-.nav.visible {
-    transform: translateX(0);
-} */
 
 #entireproject.visible {
     transform: translateX(-100%)
 }
-/* 
-.nav.open-btn.visible {
-    opacity: 0;
-} */
-
-/* .nav-black {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.986) ,rgba(17, 42, 54, 0.911));
-    width: 60%;
-    max-width:240px;
-    min-width: 320px;
-    transition-delay: 0.4s;
-}
-
-.nav-black.visible {
-    transition-delay: 0s;
-}
-
-.close-btn:hover {
-    color: #fff;
-    
-} */
-
-/* .close-btn {
-    opacity: 0.7;
-    position: absolute;
-    top: 10px;
-    right: 30px;
-    color: #807cb5;
-} */
 
 .list {
     list-style-type: none;
@@ -347,11 +295,26 @@ p {
 }
 
 .profile {
+    display: flex;
     margin: auto;
     margin-bottom: 100px;
-    width: 50%;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
+    margin-top: 5%;
+}
+
+.nameInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-img {
+    border-style: solid;
+    border-color: #66bfbf;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: auto 2rem;
 }
 
 .constellation {
@@ -389,6 +352,8 @@ p {
 .my-skills {
     margin-top: 100px;
     transform: translateY(1px);
+    overflow-y: hidden;
+    height: 100vh;
 }
 
 .coding {
@@ -402,7 +367,7 @@ p {
 }
 
 .skill-row { 
-    width: 70%;
+    width: 80%;
     margin: 100px auto 100px;
     text-align: center;
 }
@@ -434,7 +399,7 @@ p {
 .skill-icons {
     display: flex;
     flex-direction: row;
-    width: 156px;
+    width: 80px;
     align-items: center;
     margin-bottom: 10px;
     transition: 0.3s ease-in-out;
@@ -483,9 +448,19 @@ p {
 }
 
 #contact-me {
-    margin-top: 100px;
+    margin-top: 10%;
     width: 50%;
-    margin: 70px auto 80px;
+    margin: 70px auto -30px;
+    ;
+}
+
+.spaceTop {
+    margin-top: 6rem;
+    overflow-y: hidden;
+}
+
+.separator {
+    background-color: #03293d94;
 }
 
 .btn {
@@ -515,7 +490,7 @@ p {
     background-image: -o-linear-gradient(top, #807cb5, #884676);
     background-image: linear-gradient(to bottom, #807cb5, #884676);
     text-decoration: none;
-    transition: 0.3s;
+    transition: ease-in-out 0.3s;
 }
 
 .btn:active {
@@ -554,12 +529,134 @@ p {
 .copyright {
     color: #eaf6f6;
     font-size: 0.75rem;
-    padding: 40px 0 0px;
+    padding: 0;
+    margin-top: 30px;
 }
 a:hover {
     color: #b5c99a
 }
 
+.newCard {
+    background-color: #061c29;
+    display: flex;
+    margin: 60px auto;
+    max-width: 70%;
+    padding: 50px;
+    margin-bottom: 5rem;
+    overflow-y: hidden;
+}
+
+.newProjectImg {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    object-fit: fill;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;    
+}
+
+.newProjectDescription {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#main {
+    align-content: center;
+    justify-content: center;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 3rem;
+    border-radius: 3px;
+}
+
+.showcaseCard img {
+    width: 100%;
+}
+
+.showcaseCard-info {
+    color: #061c29;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+    flex-direction: column;
+}
+
+.showcaseCard-info h3 {
+    margin-top: 0;
+}
+
+.overview {
+    background-color: #061c29;
+    padding: 2rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: .7s;
+    z-index: 0;
+}
+
+.showcaseCard:hover .overview {
+    transform: translateY(0%);
+    opacity: 1;
+    z-index: 1;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexCenter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1530px) {
+    .showcaseCard-info, .overview {
+        transform: none;
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .overview {
+        margin-top: 1.5rem;
+        position: relative;
+        flex-direction: column;
+        z-index: 1;
+    }
+    .overview:hover {
+        transform: none;
+    }
+
+    .flexCenter {
+        flex-direction: column;
+    }
+}
 @media (max-width: 1200px) {
     .constellation {
         width: 100px;
@@ -567,7 +664,12 @@ a:hover {
         top: 70%;
     }
     .skill-icons {
-        width: 145px;
+        width: 80px;
+    }
+    .my-skills {
+        overflow-y: visible;
+        padding-bottom: 2rem;
+        height: 100%;
     }
 }
 @media (max-width: 800px) {
@@ -612,6 +714,43 @@ a:hover {
         margin: auto 22px auto 22px;
         text-decoration: none;
         font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .bg-video {
+        display: none;
+    }
+    .full-bg-img {
+        display: block;
+        object-fit: cover;
+
+    }
+    .newCard {
+        margin: 0;
+        padding: 0;
+    }
+    .showcaseCard {
+        padding: 0;
+    }
+
+    #main {
+        overflow-x: hidden;
+        border-radius: 7px;
+    }
+
+    .showcaseCard img {
+        width: 100%;
+        
+    }
+    .overview {
+        padding: 0;
+    }
+    .showcaseCard-info p {
+        margin: 8px;
+    }
+    .contact-me-container {
+        height: 100%;
     }
 }
 
