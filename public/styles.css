@@ -116,6 +116,7 @@ p {
     position: relative;
     padding-top: 100px;
     margin: 0;
+    overflow-x: hidden;
 }
 
 
